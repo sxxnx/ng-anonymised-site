@@ -1,0 +1,39 @@
+@use '../var'
+
+.main
+  background-color: var.$bg-dark
+  background-image: linear-gradient(#000000c7, #000000c7), url(../assets/anjali.jpg)
+  background-size: cover
+  color: var.$title
+  height: 100vh
+  text-align: center
+  padding-top: 200px
+  width: 100%
+  h1
+    font-family: 'Parisienne', cursive
+    font-size: var.$xl-text
+    font-weight: normal
+
+
+.subtitle
+  color: var.$light-text
+  font-family: 'Raleway', sans-serif
+  font-size: var.$m-text
+  font-weight: lighter
+
+div.scroll-down
+  margin-top: 50px
+
+.scroll-down
+  height: 60px
+  margin: 0 auto
+  width: 60px
+  .arrow
+    border: none
+    border-left: 1px solid var.$sub
+    border-top: 1px solid var.$sub
+    height: 100%
+    transform: rotate(225deg)
+    width: 100%
+    a
+      display: block

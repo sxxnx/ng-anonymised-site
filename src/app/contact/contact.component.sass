@@ -1,0 +1,52 @@
+@use '../../var'
+
+.wrapper
+  background-color: var.$bg-dark
+  background-image: linear-gradient(#000000c7, #000000c7), url(../../assets/old-yoga.png)
+  background-size: cover
+  box-sizing: border-box
+  clear: both
+  color: var.$sub
+  height: 100%
+  padding: 50px 50px 80px 50px
+
+.container-form
+  width: 45%
+
+.title
+  margin-bottom: 50px
+
+label
+  display: inline-block
+  min-width: 300px
+
+.form-group
+  margin-bottom: 30px
+
+input,
+textarea
+  border: 1px solid var.$sub
+  background-color: transparent
+  color: var.$sub
+  height: 20px
+  width: 250px
+  -webkit-appearance: none
+  -moz-appearance: none
+
+textarea
+  height: 200px
+
+.message-label
+  vertical-align: top
+
+.container-button
+  text-align: right
+  button
+    appearance: none
+    background-color: var.$sub
+    border: none
+    border-radius: 3px
+    color: var.$black
+    font-weight: lighter
+    font-size: 1.2em
+    padding: 5px 20px

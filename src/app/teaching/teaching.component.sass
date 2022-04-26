@@ -1,0 +1,48 @@
+@use '../../var'
+
+.wrapper
+  background-color: var.$bg-dark
+  background-image: linear-gradient(#000000c7, #000000c7), url(../../assets/ashtanga.png)
+  background-size: cover
+  box-sizing: border-box
+  height: 100%
+  padding: 50px 50px 80px 50px
+
+.title
+  margin-bottom: 30px
+
+.container-grid
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: 1fr 1fr
+  gap: 0 30px
+  grid-template-areas: "ashtanga hatha" "vinyasa yin"
+
+.ashtanga
+  grid-area: ashtanga
+
+.hatha
+  grid-area: hatha
+
+.vinyasa
+  grid-area: vinyasa
+
+.yin
+  grid-area: yin
+
+.grid
+  background-color: rgba(229, 221, 213, 0.44)
+  color: var.$light-text
+  margin: 20px 0
+  padding: 20px
+
+.grid-title
+  font-size: var.$m-text
+  font-weight: lighter
+  letter-spacing: 25px
+  text-align: center
+  text-transform: uppercase
+
+.details
+  font-size: var.$xs-text
+  padding: 10px 50px

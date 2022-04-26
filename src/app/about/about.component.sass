@@ -1,0 +1,55 @@
+@use '../../var'
+
+.wrapper
+  box-sizing: border-box
+  height: 100%
+  padding: 50px
+
+.picture-about
+  float: right
+  position: relative
+  text-align: right
+  width: 50%
+  img
+    margin-bottom: 50px
+    width: 450px
+  .tape
+    background-color: var.$tape
+    display: block
+    height: 30px
+    left: 130px
+    opacity: 0.3
+    position: absolute
+    top: 5px
+    transform: rotate(130deg)
+    width: 90px
+
+
+.explanation-about
+  float: left
+  max-width: 500px
+  width: 50%
+  &::after
+    content: ''
+    clear: both
+    display: block
+  .title
+    margin-bottom: 30px
+
+.sep
+  clear: both
+  text-align: center
+
+.quote
+  color: var.$title
+  font-size: var.$m-text
+
+.sub-quote
+  color: var.$sub
+  font-size: var.$s-text
+  font-weight: lighter
+
+.definition
+  color: var.$sub-text
+  font-size: var.$sm-text
+  font-weight: lighter

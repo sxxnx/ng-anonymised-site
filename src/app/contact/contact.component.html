@@ -1,0 +1,32 @@
+<div class="wrapper dark">
+  <h2 id="contact" class="title">Contact</h2>
+  <div class="container-form">
+    <div class="col-md-6">
+      <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+        <div class="form-group">
+          <label for="nom">Nom</label>
+          <input type="text" class="form-control" name="Nom" placeholder="Nom" formControlName="Nom"/>
+        </div>
+        <div class="form-group">
+          <label for="prenom">Prénom</label>
+          <input type="text" class="form-control" name="Prenom" placeholder="Prénom" formControlName="Prenom"/>
+        </div>
+        <div class="form-group formGroup">
+          <label for="Email">Email</label>
+          <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Entrer l'adresse e-mail" formControlName="Email"/>
+        </div>
+        <div class="form-group">
+          <label for="motif">Motif de la demande</label>
+          <input type="text" class="form-control" name="motif" placeholder="Motif de la demande" formControlName="Motif"/>
+        </div>
+        <div class="form-group">
+          <label class="message-label" for="message">Message</label>
+          <textarea class="form-control" formControlName="Message" name="Message"></textarea>
+        </div>
+        <div class="container-button">
+          <button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
